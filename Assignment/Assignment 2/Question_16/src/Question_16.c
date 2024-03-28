@@ -8,8 +8,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-int count_1s_bits(unsigned short int number);
+void count_1s_bits(unsigned short int number);
 int main(void) {
+	/*taking a variable with a range more than we need, to avoid overflow*/
 	unsigned short int number;
 	printf("Enter a number: ");
 	fflush(stdout);
@@ -19,24 +20,28 @@ int main(void) {
 	return 0;
 }
 
-int count_1s_bits(unsigned short int number)
+void count_1s_bits(unsigned short int number)
 {
 	int count = 0, reminder;
-	if(number <=255)
+	if(number <=255)/*if condition to determine the range of 8 bits number*/
 	{
 
 		while(number > 0){
+			/*we calculate the reminder, cause if the number is odd, thats mean
+			that the least significant bit is 1, so the counter is incrementing*/
 			reminder = number%2;
 			if(reminder == 1)
 				count++;
+			/*shift right to push the bits towards the least significant bit,
+			and whenever the reminder gives us 1, the counter will increment*/
 			number>>=1;
 		}
 		printf("%d",count);
 	}
-	else
+	else /*in case the user entered out of range number*/
 	{
 		printf("your number is out of the 8 bits range");
 	}
 
-	return 0;
+	return;
 }
