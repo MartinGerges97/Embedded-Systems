@@ -2,7 +2,7 @@
  ============================================================================
  Name        : Question_15.c
  Author      : Martin Gerges
- Description : code to count the number of 1’s in an unsigned 32-bit integer.
+ Description : code to count the number of 1’s in an unsigned 8-bit integer.
  ============================================================================
  */
 
