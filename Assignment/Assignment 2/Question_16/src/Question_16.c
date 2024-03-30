@@ -8,40 +8,32 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-void count_1s_bits(unsigned short int number);
+int count_1s_bits(unsigned char number);
 int main(void) {
 	/*taking a variable with a range more than we need, to avoid overflow*/
 	unsigned short int number;
 	printf("Enter a number: ");
 	fflush(stdout);
 	scanf("%hd",&number);
-
-	count_1s_bits(number);
+	printf("%d",count_1s_bits(number));
 	return 0;
 }
 
-void count_1s_bits(unsigned short int number)
+int count_1s_bits(unsigned char number)
 {
-	int count = 0, reminder;
-	if(number <=255)/*if condition to determine the range of 8 bits number*/
+	int mask = 1,count = 0;
+	while(number >= 1) /*loop to check when the number reaches 0 to stop*/
 	{
-
-		while(number > 0){
-			/*we calculate the reminder, cause if the number is odd, thats mean
-			that the least significant bit is 1, so the counter is incrementing*/
-			reminder = number%2;
-			if(reminder == 1)
-				count++;
-			/*shift right to push the bits towards the least significant bit,
-			and whenever the reminder gives us 1, the counter will increment*/
-			number>>=1;
+		/*condition to check if there is a 1 bit in the least siginficant bit*/
+		if((number & mask) == 1)
+		{
+			count++;
 		}
-		printf("%d",count);
-	}
-	else /*in case the user entered out of range number*/
-	{
-		printf("your number is out of the 8 bits range");
+		/*shift right to divide by 2; push the bits towards the LSB
+			to use the bit wise and operation with mask to see if it is 1 or 0 */
+		number>>=1;
 	}
 
-	return;
+	return count;
 }
+

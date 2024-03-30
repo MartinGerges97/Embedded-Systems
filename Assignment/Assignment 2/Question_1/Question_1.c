@@ -9,7 +9,7 @@
 void cube(int num1)
 {
 	long long result;
-	result = num1*num1;
+	result = num1*num1*num1;
 	printf("the cube of the number you entered equals: %lld",result);
 
 	return;
