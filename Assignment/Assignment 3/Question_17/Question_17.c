@@ -27,7 +27,7 @@ int main()
 
 	printf("==================================\n");
 	printf("       Before Swapping \n");
-	printf("==================================\n\n");
+	printf("==================================\ns\n");
 
 	printf("Array_A before swapping: \n");
 	print_array(Array_A,Array_A_Size);
@@ -45,7 +45,7 @@ int main()
 	printf("Array_A after swapping: \n");
 	print_array(Array_A,Array_A_Size);
 	printf("Array_B after swapping: \n");
-	print_array(Array_B,Array_A_Size);
+	print_array(Array_B,Array_B_Size);
 
 
 
@@ -57,7 +57,7 @@ int main()
 
 int Swap_array (int a_size,int *array_a,int b_size,int *array_b)
 {
-	for(int i=0;i<a_size;i++)
+	for(int i=0;i<b_size;i++)
 	{
 		swap_elements(array_a,array_b);
 		array_a++;
