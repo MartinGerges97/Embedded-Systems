@@ -1,4 +1,12 @@
 /*
+ * jj.c
+ *
+ *  Created on: Apr 20, 2024
+ *      Author: mm557
+ */
+
+
+/*
  ============================================================================
  Name        : Vehicle Control System
  Author      : Martin Gerges
@@ -10,8 +18,8 @@
 /*=======================================================================================
  * program definitions
  * =======================================================================================*/
-#include <stdio.h>
 
+#include <stdio.h>
 #define COLOR_GREEN  "\x1b[32m"
 #define COLOR_YELLOW "\x1b[33m"
 #define COLOR_RED    "\x1b[31m"
@@ -37,6 +45,9 @@ enum ProgramStates
 	Engine_OFF = 2,
 	Quit_System = 3
 };
+void Start_program();
+void Display_State(void);
+
 
 /*===============================================================================
  * initialization of variables
@@ -54,7 +65,7 @@ struct Program_inputs
 
 int main(void)
 {
-	start_program();
+	Start_program();
 	printf("%c",userInputs.program_state);
 	return EXIT_SUCCESS;
 }
@@ -81,15 +92,15 @@ void Display_State(void)
 void Start_program()
 {
 	do{
+		Display_State();
 		printf("\n\n");
 		fflush(stdout);
-		scanf(" %c",&userInputs.program_state);
-		if(userInputs.program_state > 'c' || userInputs.program_state< 'a')
+		scanf("%c",&userInputs.program_state);
+		if(userInputs.program_state > 99 || userInputs.program_state< 97)
 		{
-			printf(COLOR_RED "\n Your choice is out of the specified options!\n  Please choose the correct character of state" COLOR_RED);
-			Display_State();
+			printf(COLOR_RED "\n Your choice is out of the specified options!\n  Please choose the correct character of state\n\n" COLOR_RED);
 		}
-	}while(userInputs.program_state > 'c' || userInputs.program_state < 'a');
+	}while(userInputs.program_state > 99 || userInputs.program_state < 97);
 
 	return;
 }
