@@ -2,7 +2,8 @@
 /* ============================================================================
  Name        : Vehicle Control System
  Author      : Martin Gerges
- Description : main file of the project
+ Description : Veihcle Control System to take inputs from user, and sensors(traffic lights, room temperature and engine temperature), and
+ based on sensor values, set vehicel (Ac, speed and Engine temperature control) to certain value or state.
  ============================================================================
  */
 
@@ -118,7 +119,7 @@ struct program_outputs
 struct program_outputs userOutputs = {0,OFF,OFF};
 
 /*===========================================================================*
- * PROGRAM MAIN, PROGRAM STARTS HERE...
+ * PROGRAM MAIN FUNCTION, PROGRAM STARTS HERE...
  *=========================================================================== */
 int main(void)
 {
@@ -328,7 +329,7 @@ void Engine_Temperature(void)
 	fflush(stdout);
 	scanf("%d",&userInputs.engine_temp);
 	/*case if engine temp > max_temp or < min_temp, ETC is turned on, and engine_temp is set to moderate temp*/
-	if(userInputs.engine_temp < min_engine_temp || userInputs.engine_temp > max_room_temp)
+	if(userInputs.engine_temp < min_engine_temp || userInputs.engine_temp > max_engine_temp)
 	{
 		userInputs.engine_temp = moderate_engine_temp;
 		userOutputs.engine_temp_Controler = ON;
@@ -344,7 +345,7 @@ void Engine_Temperature(void)
 	return;
 }
 
-/*Function to check the speed, if it equals to minimum speed*/
+/*Function to check the speed, if it equals to minimum speed, if yes--> turn ETC and AC ON*/
 void Check_Speed(void)
 {
 	if(userOutputs.vehicle_speed == min_speed)
