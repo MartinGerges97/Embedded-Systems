@@ -1,0 +1,7 @@
+20:17:14 **** Rebuild of configuration Debug for project Exercise2_Insert_Node_At_Last ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Exercise2_Insert_Node_At_Last.o" "..\\src\\Exercise2_Insert_Node_At_Last.c" 
+gcc -o Exercise2_Insert_Node_At_Last.exe "src\\Exercise2_Insert_Node_At_Last.o" 
+
+20:17:14 Build Finished. 0 errors, 0 warnings. (took 584ms)
+

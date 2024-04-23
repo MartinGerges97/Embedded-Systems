@@ -1,0 +1,7 @@
+20:17:15 **** Rebuild of configuration Debug for project Exercise3_Find_Linked_List_Size ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Exercise3_Find_Linked_List_Size.o" "..\\src\\Exercise3_Find_Linked_List_Size.c" 
+gcc -o Exercise3_Find_Linked_List_Size.exe "src\\Exercise3_Find_Linked_List_Size.o" 
+
+20:17:15 Build Finished. 0 errors, 0 warnings. (took 629ms)
+

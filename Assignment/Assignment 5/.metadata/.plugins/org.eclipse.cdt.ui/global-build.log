@@ -1,0 +1,67 @@
+20:17:04 **** Rebuild of configuration Debug for project Dynamic_Allocation_Example ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Dynamic_Allocation_Example.o" "..\\src\\Dynamic_Allocation_Example.c" 
+gcc -o Dynamic_Allocation_Example.exe "src\\Dynamic_Allocation_Example.o" 
+Info: Nothing to build for Dynamic_Allocation_Example
+20:17:13 **** Rebuild of configuration Debug for project Exercise1_Insert_Node_At_First ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Exercise1_Insert_Node_At_First.o" "..\\src\\Exercise1_Insert_Node_At_First.c" 
+gcc -o Exercise1_Insert_Node_At_First.exe "src\\Exercise1_Insert_Node_At_First.o" 
+20:17:14 **** Rebuild of configuration Debug for project Exercise2_Insert_Node_At_Last ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Exercise2_Insert_Node_At_Last.o" "..\\src\\Exercise2_Insert_Node_At_Last.c" 
+gcc -o Exercise2_Insert_Node_At_Last.exe "src\\Exercise2_Insert_Node_At_Last.o" 
+20:17:15 **** Rebuild of configuration Debug for project Exercise3_Find_Linked_List_Size ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Exercise3_Find_Linked_List_Size.o" "..\\src\\Exercise3_Find_Linked_List_Size.c" 
+gcc -o Exercise3_Find_Linked_List_Size.exe "src\\Exercise3_Find_Linked_List_Size.o" 
+20:17:15 **** Rebuild of configuration Debug for project Exercise4_Search_For_Item_Inside_List ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Exercise4_Search_For_Item_Inside_List.o" "..\\src\\Exercise4_Search_For_Item_Inside_List.c" 
+gcc -o Exercise4_Search_For_Item_Inside_List.exe "src\\Exercise4_Search_For_Item_Inside_List.o" 
+20:17:16 **** Rebuild of configuration Debug for project Exercise5_Update_Item_Inside_List ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Exercise5_Update_Item_Inside_List.o" "..\\src\\Exercise5_Update_Item_Inside_List.c" 
+gcc -o Exercise5_Update_Item_Inside_List.exe "src\\Exercise5_Update_Item_Inside_List.o" 
+20:17:17 **** Rebuild of configuration Debug for project Exercise6_Delete_Node_From_List ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Exercise6_Delete_Node_From_List.o" "..\\src\\Exercise6_Delete_Node_From_List.c" 
+gcc -o Exercise6_Delete_Node_From_List.exe "src\\Exercise6_Delete_Node_From_List.o" 
+20:17:17 **** Rebuild of configuration Debug for project enum_ex ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\enum_ex.o" "..\\src\\enum_ex.c" 
+gcc -o enum_ex.exe "src\\enum_ex.o" 
+20:17:18 **** Rebuild of configuration Debug for project struct_ex1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\struct_ex1.o" "..\\src\\struct_ex1.c" 
+gcc -o struct_ex1.exe "src\\struct_ex1.o" 
+20:17:19 **** Rebuild of configuration Debug for project struct_ex2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\struct_ex2.o" "..\\src\\struct_ex2.c" 
+gcc -o struct_ex2.exe "src\\struct_ex2.o" 
+20:17:19 **** Rebuild of configuration Debug for project struct_ex3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\struct_ex3.o" "..\\src\\struct_ex3.c" 
+gcc -o struct_ex3.exe "src\\struct_ex3.o" 
+20:17:20 **** Rebuild of configuration Debug for project struct_ex4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\struct_ex4.o" "..\\src\\struct_ex4.c" 
+gcc -o struct_ex4.exe "src\\struct_ex4.o" 
+20:17:21 **** Rebuild of configuration Debug for project struct_ex5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\struct_ex5.o" "..\\src\\struct_ex5.c" 
+gcc -o struct_ex5.exe "src\\struct_ex5.o" 
+20:17:22 **** Rebuild of configuration Debug for project struct_ex6 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\struct_ex6.o" "..\\src\\struct_ex6.c" 
+gcc -o struct_ex6.exe "src\\struct_ex6.o" 
+20:17:22 **** Rebuild of configuration Debug for project struct_ex7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\struct_ex7.o" "..\\src\\struct_ex7.c" 
+gcc -o struct_ex7.exe "src\\struct_ex7.o" 
+20:17:23 **** Rebuild of configuration Debug for project union_ex ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\union_ex.o" "..\\src\\union_ex.c" 
+gcc -o union_ex.exe "src\\union_ex.o" 
+Info: Nothing to build for Dynamic_Allocation_Example
+Info: Nothing to build for Exercise1_Insert_Node_At_First
